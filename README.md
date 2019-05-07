@@ -32,6 +32,7 @@ USAGE
 <!-- commands -->
 * [`rg hello [FILE]`](#rg-hello-file)
 * [`rg help [COMMAND]`](#rg-help-command)
+* [`rg new [FILE]`](#rg-new-file)
 
 ## `rg hello [FILE]`
 
@@ -69,4 +70,20 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+
+## `rg new [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ rg new [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/new.ts](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/new.ts)_
 <!-- commandsstop -->
