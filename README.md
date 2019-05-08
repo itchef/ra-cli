@@ -30,29 +30,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rg hello [FILE]`](#rg-hello-file)
 * [`rg help [COMMAND]`](#rg-help-command)
 * [`rg new [FILE]`](#rg-new-file)
-
-## `rg hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ rg hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ rg hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/hello.ts)_
 
 ## `rg help [COMMAND]`
 
