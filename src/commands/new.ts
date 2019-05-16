@@ -34,12 +34,21 @@ export default class New extends Command {
       new Dir(templateDir).read().forEach(name => {
         templatesPathByName[name] = path.join(templateDir, name)
       })
-      Dir.copy(templatesPathByName['base-react'], path.join(rootDir, projectName))
+      const projectDir = path.join(rootDir, projectName)
+      Dir.copy(templatesPathByName['base-react'], projectDir)
       const packageJsonPath = path.join(rootDir, projectName, 'package.json')
       new File(packageJsonPath)
         .read()
         .update('name', projectName)
         .write()
+      new Dir(projectDir)
+        .clean('.git')
+        .cd()
+        .execute(() => {
+          Git.init()
+          Git.add({flag: 'all'})
+          Git.commit('Initial commit.')
+        })
       tmp.clean()
     }
   }

@@ -8,6 +8,18 @@ const Git = {
     const url = GITHUB_URL + owner + '/' + repo + '.git'
     const command = `git clone ${url} ${dir}`
     execSync(command)
+  },
+  init: () => {
+    const command = 'git init'
+    execSync(command)
+  },
+  add: (option: any) => {
+    const command = (option.flag === 'all') ? 'git add .' : 'git add'
+    execSync(command)
+  },
+  commit: (message: string) => {
+    const command = `git commit -m '${message}'`
+    execSync(command)
   }
 }
 
