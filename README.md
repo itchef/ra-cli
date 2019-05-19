@@ -66,3 +66,6 @@ OPTIONS
 
 _See code: [src/commands/new.ts](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/new.ts)_
 <!-- commandsstop -->
+
+# License
+### The MIT License
