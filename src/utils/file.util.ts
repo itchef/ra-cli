@@ -12,10 +12,10 @@ import * as Path from 'path'
 export default class File {
   private _path: string
   private _extension: string
-  private _data: string | undefined
+  private _data: any | undefined
   private _JSON_EXTENSION = '.json'
 
-  constructor(path: string, data?: string) {
+  constructor(path: string, data?: any) {
     this._path = path
     this._data = data
     this._extension = Path.extname(this._path)
