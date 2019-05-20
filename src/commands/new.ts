@@ -14,7 +14,7 @@ import File from '../utils/file.util'
 import Git from '../utils/git.util'
 
 export default class New extends Command {
-  static description = 'To generate a new rg-cli project'
+  static description = 'To generate a new ra-cli project'
 
   static flags = {
     help: flags.help({char: 'h'}),

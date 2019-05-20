@@ -1,12 +1,12 @@
 {
-  "name": "rg-cli",
+  "name": "ra-cli",
   "description": "A cli tool to generate react app",
   "version": "0.0.0",
   "author": "Kaustav Chakraborty @phoenixTW",
   "bin": {
     "rg": "./bin/run"
   },
-  "bugs": "https://github.com/ITChef/rg-cli/issues",
+  "bugs": "https://github.com/ITChef/ra-cli/issues",
   "dependencies": {
     "@oclif/command": "^1.5.13",
     "@oclif/config": "^1.12.12",
@@ -37,7 +37,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/ITChef/rg-cli",
+  "homepage": "https://github.com/ITChef/ra-cli",
   "keywords": [
     "oclif"
   ],
@@ -50,7 +50,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "ITChef/rg-cli",
+  "repository": "ITChef/ra-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",
