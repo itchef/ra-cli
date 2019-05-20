@@ -10,10 +10,10 @@ import * as FS from 'fs'
 import * as Path from 'path'
 
 export default class File {
-  private _path: string
-  private _extension: string
-  private _data: any | undefined
-  private _JSON_EXTENSION = '.json'
+  private readonly _path: string
+  private readonly _extension: string
+  private readonly _data: any | undefined
+  private readonly _JSON_EXTENSION = '.json'
 
   constructor(path: string, data?: any) {
     this._path = path

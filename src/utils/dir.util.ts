@@ -14,7 +14,7 @@ export default class Dir {
   public static copy(src: string, destination: string) {
     execSync(`cp -r ${src} ${destination}`)
   }
-  private _dirName: string
+  private readonly _dirName: string
 
   constructor(dirName: string) {
     this._dirName = dirName
