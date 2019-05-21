@@ -15,7 +15,7 @@ $ npm install -g @itchef/rg-cli
 $ rg COMMAND
 running command...
 $ rg (-v|--version|version)
-@itchef/rg-cli/0.0.1-1 darwin-x64 node-v11.5.0
+@itchef/rg-cli/0.0.1-2 darwin-x64 node-v11.5.0
 $ rg --help [COMMAND]
 USAGE
   $ rg COMMAND
@@ -59,7 +59,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new.ts](https://github.com/ITChef/rg-cli/blob/v0.0.1-1/src/commands/new.ts)_
+_See code: [src/commands/new.ts](https://github.com/ITChef/rg-cli/blob/v0.0.1-2/src/commands/new.ts)_
 <!-- commandsstop -->
 
 # License

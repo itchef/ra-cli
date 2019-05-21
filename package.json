@@ -1,7 +1,7 @@
 {
   "name": "@itchef/rg-cli",
   "description": "A cli tool to generate react app",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "author": "Kaustav Chakraborty @phoenixTW",
   "bin": {
     "rg": "./bin/run"
