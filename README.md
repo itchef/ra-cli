@@ -6,33 +6,34 @@ A cli tool to generate react app
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
+* [License](#license)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g ra-cli
-$ ra COMMAND
+$ npm install -g @itchef/rg-cli
+$ rg COMMAND
 running command...
-$ ra (-v|--version|version)
-ra-cli/0.1.0 darwin-x64 node-v9.11.1
-$ ra --help [COMMAND]
+$ rg (-v|--version|version)
+@itchef/rg-cli/0.0.1-1 darwin-x64 node-v11.5.0
+$ rg --help [COMMAND]
 USAGE
-  $ ra COMMAND
+  $ rg COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`ra help [COMMAND]`](#rg-help-command)
-* [`ra new [FILE]`](#rg-new-file)
+* [`rg help [COMMAND]`](#rg-help-command)
+* [`rg new PROJECTNAME`](#rg-new-projectname)
 
-## `ra help [COMMAND]`
+## `rg help [COMMAND]`
 
 display help for rg
 
 ```
 USAGE
-  $ ra help [COMMAND]
+  $ rg help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -43,21 +44,22 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `ra new [FILE]`
+## `rg new PROJECTNAME`
 
-describe the command here
+To generate a new ra-cli project
 
 ```
 USAGE
-  $ ra new [FILE]
+  $ rg new PROJECTNAME
+
+ARGUMENTS
+  PROJECTNAME  Name of your application
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new.ts](https://github.com/ITChef/ra-cli/blob/v0.1.0/src/commands/new.ts)_
+_See code: [src/commands/new.ts](https://github.com/ITChef/ra-cli/blob/v0.0.1-1/src/commands/new.ts)_
 <!-- commandsstop -->
 
 # License
