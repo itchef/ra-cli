@@ -1,5 +1,5 @@
 {
-  "name": "ra-cli",
+  "name": "@itchef/rg-cli",
   "description": "A cli tool to generate react app",
   "version": "0.0.0",
   "author": "Kaustav Chakraborty @phoenixTW",
