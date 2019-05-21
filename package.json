@@ -9,7 +9,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "bugs": "https://github.com/ITChef/ra-cli/issues",
+  "bugs": "https://github.com/ITChef/rg-cli/issues",
   "dependencies": {
     "@oclif/command": "^1.5.13",
     "@oclif/config": "^1.12.12",
@@ -40,7 +40,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/ITChef/ra-cli",
+  "homepage": "https://github.com/ITChef/rg-cli",
   "keywords": [
     "oclif"
   ],
@@ -53,7 +53,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "ITChef/ra-cli",
+  "repository": "ITChef/rg-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",

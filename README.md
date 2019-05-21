@@ -1,4 +1,4 @@
-ra-cli
+rg-cli
 ======
 
 A cli tool to generate react app
@@ -46,7 +46,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6
 
 ## `rg new PROJECTNAME`
 
-To generate a new ra-cli project
+To generate a new rg-cli project
 
 ```
 USAGE
@@ -59,7 +59,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new.ts](https://github.com/ITChef/ra-cli/blob/v0.0.1-1/src/commands/new.ts)_
+_See code: [src/commands/new.ts](https://github.com/ITChef/rg-cli/blob/v0.0.1-1/src/commands/new.ts)_
 <!-- commandsstop -->
 
 # License

@@ -48,7 +48,7 @@ jobs:
 
 workflows:
   version: 2
-  "ra-cli":
+  "rg-cli":
     jobs:
       - node-latest
       - node-8
