@@ -6,6 +6,9 @@
   "bin": {
     "rg": "./bin/run"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": "https://github.com/ITChef/ra-cli/issues",
   "dependencies": {
     "@oclif/command": "^1.5.13",
