@@ -9,9 +9,11 @@
 import {Command, flags} from '@oclif/command'
 import * as path from 'path'
 
+import GitHelper from '../helpers/Git.helper'
+import NewHelper from '../helpers/new.helper'
 import Dir from '../utils/dir.util'
-import File from '../utils/file.util'
 import Git from '../utils/git.util'
+import Logger from '../utils/logger.util'
 
 export default class New extends Command {
   static description = 'To generate a new rg-cli project'
@@ -32,30 +34,23 @@ export default class New extends Command {
     const {args} = this.parse(New)
     const projectName = args.projectName
 
-    if (projectName) {
+    if (projectName.trim()) {
       const rootDir = path.join(__dirname, '../../')
       const tempDir = path.join(rootDir, '.tmp')
       const tmp = new Dir(tempDir).clean().make().cd()
+      Logger.info('Fetch templates.......')
       Git.Clone('itchef', 'rg', 'packages')
       const templateDir = path.join(tempDir, 'packages/templates')
-      const templatesPathByName: any = {}
-      new Dir(templateDir).read().forEach(name => {
-        templatesPathByName[name] = path.join(templateDir, name)
-      })
-      const projectDir = path.join(rootDir, projectName)
-      Dir.copy(templatesPathByName['base-react'], projectDir)
       const packageJsonPath = path.join(rootDir, projectName, 'package.json')
-      new File(packageJsonPath)
-        .read()
-        .update('name', projectName)
-        .write()
+      Logger.info('Creating base app........')
+      const projectDir = NewHelper.copyBaseReact(templateDir, rootDir, projectName)
+      NewHelper.updatePackageJson(packageJsonPath, projectName)
       new Dir(projectDir)
         .clean('.git')
         .cd()
         .execute(() => {
-          Git.init()
-          Git.add({flag: 'all'})
-          Git.commit('Initial commit.')
+          Logger.info('Adding initial commit........')
+          GitHelper.initialCommit()
         })
       tmp.clean()
     }
